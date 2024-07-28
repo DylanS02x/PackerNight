@@ -1,0 +1,13 @@
+[package]
+name = "elf_packer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.7"
+block-modes = "0.8"
+flate2 = "1.0"
+hex-literal = "0.3"
+nom = "7.0"
+clap = { version = "4.0", features = ["derive"] }
+
