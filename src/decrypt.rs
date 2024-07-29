@@ -1,3 +1,9 @@
+//! # Decrypt Module
+//! 
+//! Ce module fournit des fonctions pour déchiffrer et décompresser des fichiers en utilisant AES-256 en mode CBC avec padding PKCS7 et décompression Zlib.
+//! 
+//! Les fonctions de ce module permettent de lire un fichier chiffré, le déchiffrer, le décompresser et sauvegarder le résultat dans un nouveau fichier.
+
 extern crate aes;
 extern crate block_modes;
 extern crate flate2;
@@ -14,6 +20,17 @@ use std::io::{Read, Write, Result};
 use std::convert::TryInto;
 
 type Aes256Cbc = Cbc<Aes256, Pkcs7>;
+
+/// Déchiffre et décompresse un fichier en utilisant AES-256 en mode CBC avec padding PKCS7 et décompression Zlib.
+///
+/// # Arguments
+///
+/// * `path` - Le chemin du fichier chiffré.
+/// * `output_path` - Le chemin où le fichier déchiffré sera sauvegardé.
+///
+/// # Erreurs
+///
+/// Cette fonction retournera une erreur si le fichier d'entrée ne peut pas être lu ou si le fichier de sortie ne peut pas être écrit.
 
 pub fn decrypt_and_decompress_file(path: &str, output_path: &str) -> Result<()> {
     let mut file = File::open(path)?;
