@@ -1,5 +1,5 @@
 //! # Decrypt Module
-//! 
+//!  
 //! Ce module fournit des fonctions pour déchiffrer et décompresser des fichiers en utilisant AES-256 en mode CBC avec padding PKCS7 et décompression Zlib.
 //! 
 //! Les fonctions de ce module permettent de lire un fichier chiffré, le déchiffrer, le décompresser et sauvegarder le résultat dans un nouveau fichier.
