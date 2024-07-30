@@ -1,3 +1,8 @@
+//! # Encrypt Module
+//! 
+//! Ce module fournit des fonctions pour chiffrer des fichiers en utilisant AES-256 en mode CBC avec padding PKCS7 et compression Zlib.
+//! 
+//! Les fonctions de ce module permettent de lire un fichier, le compresser, le chiffrer et sauvegarder le résultat dans un nouveau fichier.
 extern crate aes;
 extern crate block_modes;
 extern crate flate2;
