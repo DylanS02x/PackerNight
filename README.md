@@ -1,7 +1,7 @@
 # PackerNight
 <br>
 
-PackerNight est un projet Rust pour le chiffrement et le déchiffrement de fichiers en utilisant l'algorithme AES-256 en mode CBC, avec compression des données à l'aide de zlib.
+PackerNight est un projet Rust pour le chiffrement et le déchiffrement de fichiers en utilisant l'algorithme AES-256 en mode CBC, avec compression des données à l'aide de zlib.  
 <br>
 
 ## Installation
